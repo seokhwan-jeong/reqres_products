@@ -12,7 +12,7 @@ public class Application {
         applicationContext = SpringApplication.run(Application.class, args);
 
         ProductRepository productRepository = applicationContext.getBean(ProductRepository.class);
-        // 초기 상품 셋팅
+        // 초기 상품 셋팅d
         String[] products = {"TV", "MASK", "NOTEBOOK", "TABLE", "CLOCK"};
         int i = 1;
         for(String p : products){
