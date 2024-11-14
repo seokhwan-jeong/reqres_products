@@ -1,4 +1,4 @@
-apiVersion: "apps/v1"
+1apiVersion: "apps/v1"
 kind: "Deployment"
 metadata: 
   name: "product"
@@ -17,7 +17,7 @@ spec:
       containers: 
         - 
           name: "product"
-          image: "ungacr.azurecr.io/product:latest"
+          image: "user14.azurecr.io/product:latest"
           ports: 
             - 
               containerPort: 80
