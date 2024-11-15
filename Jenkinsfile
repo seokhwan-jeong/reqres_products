@@ -70,9 +70,9 @@ stages {
     }
     
     stage('Commit and Push to GitHub') {
-        steps {
-            script {
-                withCredentials([usernamePassword(credentialsId: GITHUB_CREDENTIALS_ID, usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: GITHUB_CREDENTIALS_ID, usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
                         sh """
                             git config --global user.email "your-email@example.com"
                             git config --global user.name "Jenkins CI"
@@ -86,8 +86,8 @@ stages {
                             rm -rf repo
                         """
                     }
+                }
             }
-        }
-    } 
-}
+        } 
+    }
 }
