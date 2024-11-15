@@ -17,7 +17,7 @@ spec:
       containers: 
         - 
           name: "product"
-          image: "user14.azurecr.io/product:v113"
+          image: "user14.azurecr.io/product:v114"
           ports: 
             - 
               containerPort: 80
